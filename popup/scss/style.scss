@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+body {
+  background: linear-gradient(to bottom, black, #424242) no-repeat;
+  height: 350px;
+  width: 20rem;
+}
+main {
+  padding: 16px;
+  #search_box {
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+    span {
+      position: absolute;
+      bottom: 0;
+      height: 1px;
+      background-color: red;
+      width: 0%;
+      left: 0;
+      right: 0;
+      transition: width 0.3s linear;
+    }
+    input {
+      width: 100%;
+      padding: 4px;
+      border-radius: 4px;
+      outline: none;
+      &:focus {
+        & + span {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

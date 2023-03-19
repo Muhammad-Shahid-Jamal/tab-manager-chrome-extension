@@ -22,7 +22,7 @@ main #search_box span {
   position: absolute;
   bottom: 0;
   height: 1px;
-  background-color: red;
+  background-color: #ffa500;
   width: 0%;
   left: 0;
   right: 0;

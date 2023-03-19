@@ -1,3 +1,4 @@
+$secondary_color: #ffa500;
 * {
   margin: 0;
   box-sizing: border-box;
@@ -18,7 +19,7 @@ main {
       position: absolute;
       bottom: 0;
       height: 1px;
-      background-color: red;
+      background-color: $secondary_color;
       width: 0%;
       left: 0;
       right: 0;

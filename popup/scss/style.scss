@@ -1,4 +1,7 @@
 $secondary_color: #ffa500;
+$box_shadow_color:#686868;
+$border:1px solid #734b00;
+$box_shadow: 1px 1px 5px $box_shadow_color;
 * {
   margin: 0;
   box-sizing: border-box;
@@ -15,6 +18,7 @@ main {
     position: relative;
     border-radius: 4px;
     overflow: hidden;
+    margin-bottom: 16px;
     span {
       position: absolute;
       bottom: 0;
@@ -34,6 +38,19 @@ main {
         & + span {
           width: 100%;
         }
+      }
+    }
+  }
+  ul{
+    list-style: none;
+    li{
+      border: $border;
+      color: white;
+      border-radius: 4px;
+      box-shadow: $box_shadow;
+      a{
+        display: block;
+        padding: 4px 8px;
       }
     }
   }

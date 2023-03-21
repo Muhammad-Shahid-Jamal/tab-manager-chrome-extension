@@ -1,28 +1,37 @@
 * {
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
 }
 
 body {
-  background: -webkit-gradient(linear, left top, left bottom, from(black), to(#424242)) no-repeat;
   background: linear-gradient(to bottom, black, #424242) no-repeat;
   height: 350px;
   width: 20rem;
+  overflow: hidden;
 }
 
 main {
   padding: 16px;
+  height: inherit;
+  overflow: hidden;
+  overflow-y: scroll;
 }
-
+main::-webkit-scrollbar {
+  width: 5px;
+}
+main::-webkit-scrollbar-track {
+  background-color: #686868;
+}
+main::-webkit-scrollbar-thumb {
+  background-color: #ffa500;
+}
 main #search_box {
   position: relative;
   border-radius: 4px;
   overflow: hidden;
   margin-bottom: 16px;
 }
-
 main #search_box span {
   position: absolute;
   bottom: 0;
@@ -31,35 +40,38 @@ main #search_box span {
   width: 0%;
   left: 0;
   right: 0;
-  -webkit-transition: width 0.3s linear;
   transition: width 0.3s linear;
 }
-
 main #search_box input {
   width: 100%;
   padding: 4px;
   border-radius: 4px;
   outline: none;
 }
-
 main #search_box input:focus + span {
   width: 100%;
 }
-
 main ul {
   list-style: none;
 }
-
 main ul li {
   border: 1px solid #734b00;
   color: white;
   border-radius: 4px;
-  -webkit-box-shadow: 1px 1px 5px #686868;
-          box-shadow: 1px 1px 5px #686868;
+  box-shadow: 1px 1px 5px #686868;
+  display: flex;
+  align-items: center;
+  padding: 0 4px;
 }
-
+main ul li img {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+}
 main ul li a {
+  flex: 1;
   display: block;
   padding: 4px 8px;
-}
-/*# sourceMappingURL=style.css.map */
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

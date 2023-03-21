@@ -1,6 +1,6 @@
 $secondary_color: #ffa500;
-$box_shadow_color:#686868;
-$border:1px solid #734b00;
+$box_shadow_color: #686868;
+$border: 1px solid #734b00;
 $box_shadow: 1px 1px 5px $box_shadow_color;
 * {
   margin: 0;
@@ -11,9 +11,22 @@ body {
   background: linear-gradient(to bottom, black, #424242) no-repeat;
   height: 350px;
   width: 20rem;
+  overflow: hidden;
 }
 main {
   padding: 16px;
+  height: inherit;
+  overflow: hidden;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: $box_shadow_color;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $secondary_color;
+  }
   #search_box {
     position: relative;
     border-radius: 4px;
@@ -41,16 +54,27 @@ main {
       }
     }
   }
-  ul{
+  ul {
     list-style: none;
-    li{
+    li {
       border: $border;
       color: white;
       border-radius: 4px;
       box-shadow: $box_shadow;
-      a{
+      display: flex;
+      align-items: center;
+      padding: 0 4px;
+      img {
+        width: 20px;
+        height: 20px;
+        background-color: white;
+        border-radius: 50%;
+      }
+      a {
+        flex: 1;
         display: block;
         padding: 4px 8px;
+        cursor: pointer;
       }
     }
   }

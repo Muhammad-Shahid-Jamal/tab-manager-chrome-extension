@@ -9,9 +9,10 @@ $box_shadow: 1px 1px 5px $box_shadow_color;
 }
 body {
   background: linear-gradient(to bottom, black, #424242) no-repeat;
-  height: 350px;
+  height: 450px;
   width: 20rem;
   overflow: hidden;
+  font-family: arial, sans-serif;
 }
 main {
   padding: 16px;

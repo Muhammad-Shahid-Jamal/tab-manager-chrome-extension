@@ -6,8 +6,8 @@
 
 body {
   background: linear-gradient(to bottom, black, #424242) no-repeat;
-  height: 450px;
-  width: 20rem;
+  height: 350px;
+  width: 27rem;
   overflow: hidden;
   font-family: arial, sans-serif;
 }
@@ -62,7 +62,7 @@ main ul li {
   box-shadow: 1px 1px 5px #686868;
   display: flex;
   align-items: center;
-  padding: 0 4px;
+  padding: 8px;
 }
 main ul li:not(:last-of-type) {
   margin-bottom: 10px;
@@ -72,6 +72,8 @@ main ul li img {
   height: 20px;
   background-color: white;
   border-radius: 50%;
+  margin-bottom: auto;
+  margin-top: 8px;
 }
 main ul li a {
   flex: 1;
@@ -80,13 +82,16 @@ main ul li a {
   cursor: pointer;
   position: relative;
 }
+main ul li a h3 {
+  margin-bottom: 8px;
+}
 main ul li a button {
   border: none;
   background-color: transparent;
   color: red;
   position: absolute;
-  right: 0;
-  top: 0;
+  right: -4px;
+  top: -4px;
   width: 20px;
   font-size: 18px;
   text-align: center;

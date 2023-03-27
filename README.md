@@ -16,3 +16,5 @@ If you would like to contribute to Chrome Tab Manager, please fork this reposito
 
 # License
 Chrome Tab Manager is licensed under the MIT license. See the LICENSE file for more information.
+# Preview
+![chrome tab manager](https://res.cloudinary.com/dmecbgmw1/image/upload/v1679877734/chromeExtension/tab-manager-chrome-extension.png)
